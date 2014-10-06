@@ -1,7 +1,7 @@
 class AnimalsController < ApplicationController
   respond_to :json
 
-  before_filter :find_animal, :except => [:index, :creatify]
+  before_filter :find_animal, :except => [:index, :create]
 
   def index
     @animals = Animal.all
