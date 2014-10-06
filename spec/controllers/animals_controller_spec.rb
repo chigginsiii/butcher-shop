@@ -13,7 +13,7 @@ describe AnimalsController do
   end
 
   describe "POST 'create'" do
-    before(:each) { post :create, animal_fattrs }
+    before(:each) { post :create, animal_attrs }
 
     its(:body)    { should_not be_empty }
     its(:status)  { should be 201 }
