@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_filter :find_user, :except => [:index, :create]
+  respond_to :json
 
   def index
     @users = User.all
